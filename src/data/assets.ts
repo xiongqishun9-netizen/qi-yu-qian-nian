@@ -1,13 +1,15 @@
 import type { AssetManifest } from '../types/story'
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}assets/${path}`
+
 export const assets: AssetManifest = {
-  prologueAtmosphere: '/assets/backgrounds/prologue-atmosphere-v2.png',
-  prologueMobile: '/assets/backgrounds/opening-mobile.png',
-  prologueClean: '/assets/backgrounds/opening-art-clean.png',
-  castingAtmosphere: '/assets/craft/casting-atmosphere.png',
-  paperNoise: '/assets/textures/paper-noise.svg',
-  figureLine: '/assets/figures/usage-figure.svg',
-  usageMural: '/assets/figures/usage-mural.png',
-  usageMethods: '/assets/figures/usage-methods.png',
-  usageFormation: '/assets/figures/usage-formation.png',
+  prologueAtmosphere: asset('backgrounds/prologue-atmosphere-v2.png'),
+  prologueMobile: asset('backgrounds/opening-mobile.png'),
+  prologueClean: asset('backgrounds/opening-art-clean.png'),
+  castingAtmosphere: asset('craft/casting-atmosphere.png'),
+  paperNoise: asset('textures/paper-noise.svg'),
+  figureLine: asset('figures/usage-figure.svg'),
+  usageMural: asset('figures/usage-mural.png'),
+  usageMethods: asset('figures/usage-methods.png'),
+  usageFormation: asset('figures/usage-formation.png'),
 }
