@@ -1,0 +1,19 @@
+:root {
+  color: #e7e0d2;
+  background: #181916;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; background: #181916; }
+body { margin: 0; min-width: 320px; min-height: 100svh; overflow: hidden; background: #181916; }
+#root { min-height: 100svh; }
+button, a { font: inherit; }
+button { cursor: pointer; }
+a { color: inherit; }
+::selection { color: #181916; background: #c8b99d; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
