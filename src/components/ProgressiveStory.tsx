@@ -201,7 +201,7 @@ export function ProgressiveStory() {
       <div className={styles.structureVeil} />
       <div className={styles.sceneTitle}><p className={styles.kicker}>第二章 / 解构</p><h2>观其形，<br /><em>更解其构</em></h2><p>滚动或按键，逐步展开机件关系</p></div>
       <div className={styles.mechanismStage}>
-        <div className={styles.mechanismImage} style={{ backgroundImage: 'url(/assets/backgrounds/opening-direction-02.png)' }} />
+        <div className={styles.mechanismImage} style={{ backgroundImage: `url(${import.meta.env.BASE_URL}assets/backgrounds/opening-direction-02.png)` }} />
         <svg viewBox="-360 -240 720 480" className={styles.mechanismSvg} role="group" aria-label="可交互的青铜弩机概念模型">
           <defs><linearGradient id="bronzeMetal" x1="0" x2="1" y1="0" y2="1"><stop stopColor="#a38b62"/><stop offset=".45" stopColor="#52685e"/><stop offset="1" stopColor="#25332f"/></linearGradient><filter id="objectShadow"><feGaussianBlur stdDeviation="12"/></filter></defs>
           <ellipse cx="0" cy="102" rx="270" ry="34" fill="#090a08" opacity=".78" filter="url(#objectShadow)" />
